@@ -10,7 +10,7 @@ spec:
         app: envvar
     spec:
       containers:
-      - image: local.io/test/envar-inheritance-caller:latest
+      - image: kuritka/envar-inheritance-caller:124
         name: envar-inheritance-caller
         env:
         - name: XYZ
