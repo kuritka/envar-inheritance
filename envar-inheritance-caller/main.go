@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"os/exec"
+	"time"
 )
 
 // envar-inheritance-CALLER
@@ -13,4 +14,5 @@ func main() {
 		fmt.Println("ERROR:", cmdErr.Error())
 	}
 	fmt.Println("OUTPUT:", string(output))
+	time.Sleep(10 * time.Minute)
 }

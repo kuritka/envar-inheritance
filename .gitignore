@@ -8,6 +8,7 @@
 !go.mod
 !go.sum
 !Makefile
+!Dockerfile
 
 !README.md
 !PROJECT

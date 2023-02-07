@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: envar-inheritance-caller
+  namespace: demo
+spec:
+  template:
+    metadata:
+      labels:
+        app: envvar
+    spec:
+      containers:
+      - image: local.io/test/envar-inheritance-caller:latest
+        name: envar-inheritance-caller
+        env:
+        - name: XYZ
+          value: "500001"
+  replicas: 1
+  selector:
+    matchLabels:
+      app: envvar
